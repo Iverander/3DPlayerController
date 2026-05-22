@@ -1,7 +1,7 @@
 {
-  "name": "com.iverander.3DPlayerController",
+  "name": "com.iverander.playercontroller",
   "version": "0.0.1",
-  "displayName": "3DPlayerController",
+  "displayName": "3D PlayerController",
   "description": "a player controller",
   "unity": "2019.1",
   "unityRelease": "0b5",
@@ -9,13 +9,12 @@
   "changelogUrl": "https://example.com/changelog.html",
   "licensesUrl": "https://example.com/licensing.html",
   "dependencies": {
-    "com.[company-name].some-package": "1.0.0",
-    "com.[company-name].other-package": "2.0.0"
   },
   "keywords": [
     "Player Controller"
   ],
   "author": {
     "name": "Iverander",
+    "email": "dont@me.com"
   }
 }
