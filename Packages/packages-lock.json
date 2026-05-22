@@ -1,13 +1,5 @@
 {
   "dependencies": {
-    "com.charmandermovies.playercontroller": {
-      "version": "file:com.charmandermovies.playercontroller",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {
-        "com.unity.test-framework": "1.6.0"
-      }
-    },
     "com.unity.ai.navigation": {
       "version": "2.0.11",
       "depth": 0,
