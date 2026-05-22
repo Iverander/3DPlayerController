@@ -1,0 +1,10 @@
+{
+    "name": "Charmandermovies.Playercontroller.Editor",
+    "references": [
+      "Charmandermovies.Playercontroller"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": []
+}

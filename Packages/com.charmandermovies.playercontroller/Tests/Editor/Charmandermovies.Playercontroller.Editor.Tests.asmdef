@@ -1,0 +1,14 @@
+{
+    "name": "Charmandermovies.Playercontroller.Editor.Tests",
+    "references": [
+        "Charmandermovies.Playercontroller.Editor",
+        "Charmandermovies.Playercontroller"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": []
+}

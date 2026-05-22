@@ -1,10 +1,12 @@
 {
   "dependencies": {
-    "com.iverander.playercontroller": {
-      "version": "file:com.iverander.playercontroller",
+    "com.charmandermovies.playercontroller": {
+      "version": "file:com.charmandermovies.playercontroller",
       "depth": 0,
       "source": "embedded",
-      "dependencies": {}
+      "dependencies": {
+        "com.unity.test-framework": "1.6.0"
+      }
     },
     "com.unity.ai.navigation": {
       "version": "2.0.11",
