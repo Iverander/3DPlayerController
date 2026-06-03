@@ -9,7 +9,7 @@
   "changelogUrl": "https://example.com/changelog.html",
   "licensesUrl": "https://example.com/licensing.html",
   "dependencies": {
-    "com.dbrizov.naughtyattributes": "2.1.4"
+    "com.unity.cinemachine": "3.1.6"
   },
   "keywords": [
     "Player Controller"
