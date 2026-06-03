@@ -9,8 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6373589161210761438}
+  - component: {fileID: 4959945162283732184}
   - component: {fileID: 3179525218780157354}
-  - component: {fileID: 6625803891829816977}
+  - component: {fileID: 2053894548581646958}
   m_Layer: 0
   m_Name: ThirdPersonController
   m_TagString: Untagged
@@ -27,13 +28,40 @@ Transform:
   m_GameObject: {fileID: 6753004914228267078}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.35355, y: 0.24748, z: 0.35355}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1512494970142381529}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &4959945162283732184
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6753004914228267078}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
 --- !u!136 &3179525218780157354
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -57,7 +85,7 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &6625803891829816977
+--- !u!114 &2053894548581646958
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -66,9 +94,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 6753004914228267078}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de88cffb159e004178affae0bae8fd62, type: 3}
+  m_Script: {fileID: 11500000, guid: 0a126933cb507c741b9692eb119d275c, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Iverander::Iverander.ThirdPerson
+  m_EditorClassIdentifier: Iverander.ThirdPerson::Iverander.ThirdPerson.ThirdPersonController
 --- !u!1 &8625155627124761296
 GameObject:
   m_ObjectHideFlags: 0
@@ -80,7 +108,6 @@ GameObject:
   - component: {fileID: 1512494970142381529}
   - component: {fileID: 656599241739447129}
   - component: {fileID: 7789216604957283196}
-  - component: {fileID: 6760395761804790176}
   m_Layer: 0
   m_Name: Art
   m_TagString: Untagged
@@ -160,26 +187,3 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &6760395761804790176
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8625155627124761296}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
