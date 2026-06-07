@@ -42,12 +42,18 @@ namespace Iverander.Input
         {
         }
 
+        public Action onJump;
         public void OnJump(InputAction.CallbackContext context)
         {
+            if(context.performed) return;
+            onJump?.Invoke();
         }
 
+        public Action onSprint;
         public void OnSprint(InputAction.CallbackContext context)
         {
+            if (context.performed) return;
+            onSprint?.Invoke();
         }
     }
 }

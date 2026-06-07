@@ -1,15 +1,27 @@
+using System;
 using Iverander.Input;
+using NaughtyAttributes;
 using UnityEngine;
 
 namespace Iverander.Player.ThirdPerson
 {
+    [DisallowMultipleComponent, AddComponentMenu("Iverander/Player/ThirdPersonController")]
     public class ThirdPersonController : PlayerController
     {
-        public Vector3 moveDirection;
         
-        public override void onMove(Vector2 direction)
+        protected override void onMove(Vector2 direction)
         {
-           Debug.Log(direction);
+           localMoveDirection = new Vector3(direction.x, 0, direction.y);
+        }
+
+        protected override void onJump()
+        {
+            isJumping = !isJumping;
+        }
+
+        protected override Vector3 Move()
+        {
+            return worldMoveDirection.normalized * currentSpeed;
         }
     }
 }
