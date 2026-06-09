@@ -28,13 +28,10 @@ namespace Iverander.Player
         public virtual bool IsGrounded => characterController.isGrounded;
         public virtual float currentSpeed => isSprinting ? speed.y : speed.x;
 
-        private void Start()
-        {
-            isSprinting = reverseSprint;
-        }
-
         public void OnEnable()
         {
+            isSprinting = reverseSprint;
+            
             InputReader.Enable();
             InputReader.onMove += onMove;
             InputReader.onJump += onJump;

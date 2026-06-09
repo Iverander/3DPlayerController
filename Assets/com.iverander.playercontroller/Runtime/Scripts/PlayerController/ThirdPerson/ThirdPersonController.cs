@@ -21,6 +21,8 @@ namespace Iverander.Player.ThirdPerson
 
         protected override Vector3 Move()
         {
+            Debug.Log(Player.instance.cam);
+            
             return worldMoveDirection.normalized * currentSpeed;
         }
     }

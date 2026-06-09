@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using Unity.Cinemachine;
 
 namespace Iverander.Player
 {
@@ -12,22 +13,18 @@ namespace Iverander.Player
         
         [HideInInspector] public Rigidbody rb;
         [HideInInspector] public CharacterController characterController;
-        [HideInInspector] public Camera cam;
-
-        private void Awake()
-        {
-            instance = this;
-        }
+        public Transform cam;
 
         private void Start()
         {
+            instance = this;
             Cursor.lockState = CursorLockMode.Locked;
             
             controller = GetComponent<PlayerController>(); 
             
             characterController = GetComponent<CharacterController>();
             rb = GetComponent<Rigidbody>();
-            cam = GetComponentInChildren<Camera>();
+            cam = GetComponentInChildren<CinemachineCamera>().transform;
         }
     }
 }
